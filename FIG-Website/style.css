@@ -1,0 +1,167 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header-row {
+    background-color: blue;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    width: calc(100% / 3);
+    /* word-wrap: break-word; */
+    height: 20px;
+}
+.event-selection{
+    padding: 5px;
+}
+.skill-even-row {
+    background-color: white;
+    color: black;
+}
+
+.skill-odd-row {
+    background-color: lightblue;
+    color: black;
+}
+
+#skill-table-container {
+    padding: 5px;
+}
+
+.skill-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.skill-entry:hover {
+    background-color: rgb(135, 135, 135);
+    cursor: pointer;
+}
+.super-skill-class {
+    display: none;
+}
+
+#floor {
+    display: block;
+}
+
+#pommel mushroom rings vault pbars highbar {
+    display: none;
+}
+
+.skill-table th,
+.skill-table td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.skill-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.skill-table tr:first-child th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.skill-table td {
+    background-color: #f8f9fa;
+}
+
+.skill-button {
+    margin-bottom: 20px;
+}
+
+
+
+@media print {
+
+    /* Ensure background and text are black and white */
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    .colorful-element {
+        color: black !important;
+        background-color: white !important;
+    }
+
+    /* Additional styles for other elements can be added here */
+    /* Remove any other colorful styles */
+    * {
+        color: black !important;
+        background-color: white !important;
+        border-color: black !important;
+    }
+}
+
+
+.title {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+}
+
+#grid {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    justify-content: center;
+}
+
+.item {
+    padding: 0px;
+    overflow-y: auto;
+    flex: 1;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#skill-box {
+    display: block;
+    position: relative;
+    overflow-y: vertical;
+    /* Ensure the content can scroll */
+
+}
+
+#close-button {
+    position: sticky;
+    bottom: 1px;
+    margin-left: auto;
+    /* Push the button to the right */
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    /* Ensure it stays on top of other content */
+}
+
+#close-button:hover {
+    background-color: darkred;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+}
+
